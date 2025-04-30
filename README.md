@@ -81,6 +81,11 @@ Next: Launch EC2 instance & SSH into it
 ## Description of Resources
 
 * **VPC (my-vpc, 10.0.0.0/16):** A private network created in AWS. Other resources are built within this VPC. The CIDR block `10.0.0.0/16` defines the IP address range for this VPC.
+
+
+## 構成図
+
+![AWS Infrastructure Diagram](architecture.drawio.png)
 * **Public Subnet (public-subnet-1, 10.0.1.0/24, ap-northeast-1a):** A subnet within the VPC that has a route to the internet. The CIDR block `10.0.1.0/24` defines the IP address range for this subnet. `ap-northeast-1a` is the Availability Zone where this subnet resides.
 * **Internet Gateway (my-igw):** A gateway that enables communication between the VPC and the internet.
 * **Route Table (public-rt):** Defines the routing rules for network traffic within the VPC. Here, a route is configured to forward all internet-bound traffic from the Public Subnet (`0.0.0.0/0`) to the Internet Gateway.
