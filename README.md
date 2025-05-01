@@ -85,3 +85,12 @@ Next: Launch EC2 instance & SSH into it
 * **Internet Gateway (my-igw):** A gateway that enables communication between the VPC and the internet.
 * **Route Table (public-rt):** Defines the routing rules for network traffic within the VPC. Here, a route is configured to forward all internet-bound traffic from the Public Subnet (`0.0.0.0/0`) to the Internet Gateway.
 * **EC2 Instance (my-ec2, t2.micro):** A virtual server in AWS. It uses the `t2.micro` instance type and the Amazon Linux 2 AMI. A public IP address is automatically assigned, making it accessible from the internet.
+
+2025-5-1
+## What i did 
+- I tried to make variables.tf.
+- It worked verosity veariable.
+- I lerand that variables.tf is variables.tf geazer.
+
+## Note
+- keyword: variables depend unique 
