@@ -81,16 +81,20 @@ Next: Launch EC2 instance & SSH into it
 ## Description of Resources
 
 * **VPC (my-vpc, 10.0.0.0/16):** A private network created in AWS. Other resources are built within this VPC. The CIDR block `10.0.0.0/16` defines the IP address range for this VPC.
+
+
+## 構成図
+
+![AWS Infrastructure Diagram](architecture.drawio.png)
 * **Public Subnet (public-subnet-1, 10.0.1.0/24, ap-northeast-1a):** A subnet within the VPC that has a route to the internet. The CIDR block `10.0.1.0/24` defines the IP address range for this subnet. `ap-northeast-1a` is the Availability Zone where this subnet resides.
 * **Internet Gateway (my-igw):** A gateway that enables communication between the VPC and the internet.
 * **Route Table (public-rt):** Defines the routing rules for network traffic within the VPC. Here, a route is configured to forward all internet-bound traffic from the Public Subnet (`0.0.0.0/0`) to the Internet Gateway.
 * **EC2 Instance (my-ec2, t2.micro):** A virtual server in AWS. It uses the `t2.micro` instance type and the Amazon Linux 2 AMI. A public IP address is automatically assigned, making it accessible from the internet.
 
-2025-5-1
-## What i did 
-- I tried to make variables.tf.
-- It worked verosity veariable.
-- I lerand that variables.tf is variables.tf geazer.
+## 🛠️ What I did today 5/1
+- I tried to make variable.tf.
+- It worked to resolved errors.
+- I learned that a lot of good point variable.tf.
 
-## Note
-- keyword: variables depend unique 
+## 📘 Note
+- Keyword: variable depends unique
