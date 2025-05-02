@@ -98,3 +98,30 @@ Next: Launch EC2 instance & SSH into it
 
 ## 📘 Note
 - Keyword: variable depends unique
+
+5/2
+## Output Values
+
+
+We defined output values in `output.tf` to make Terraform results reusable.  
+For example, we output the EC2 public IP so we can connect via SSH easily.
+
+1.私たちはアウトプットファイルを定義しています、テラフォームの結果を簡単にするために。
+例えば、EC2パブリックIPと同じなのでSSH接続が簡単にできます。
+(再利用可能)reusable (ために) to make （出力値）output values 
+「Terraform の実行結果を再利用できるように、output.tf ファイルで出力値を定義しました。」
+各単語の意味:
+
+We: 私たちは
+defined: 定義した (define の過去形)
+output values: 出力値 (Terraform の実行後に得られる情報のこと)
+in output.tf: output.tf の中で (Terraform の設定ファイルの名前)
+to make: ～にするために
+Terraform results: Terraform の結果 (Terraform のコマンドを実行した後に得られる情報や作成されたリソースの状態)
+reusable: 再利用可能な
+
+```hcl
+output "ec2_public_ip" {
+  value = aws_instance.example.public_ip
+}
+
