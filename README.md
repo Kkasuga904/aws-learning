@@ -125,3 +125,7 @@ output "ec2_public_ip" {
   value = aws_instance.example.public_ip
 }
 
+
+I build jsonencode multi verosity.
+security_groups = [aws_security_group.instance.id] is perfect parameter patan.
+
