@@ -125,7 +125,11 @@ output "ec2_public_ip" {
   value = aws_instance.example.public_ip
 }
 
-
+5/3
 I build jsonencode multi verosity.
 security_groups = [aws_security_group.instance.id] is perfect parameter patan.
 
+これ修正盤
+I used jsonencode to output multiple values as a single JSON string.
+For example, security_groups = [aws_security_group.instance.id] is a correct and clean way to pass a list of values.
+I also explored different ways to write output blocks more clearly.
