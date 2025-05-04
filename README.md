@@ -133,3 +133,15 @@ security_groups = [aws_security_group.instance.id] is perfect parameter patan.
 I used jsonencode to output multiple values as a single JSON string.
 For example, security_groups = [aws_security_group.instance.id] is a correct and clean way to pass a list of values.
 I also explored different ways to write output blocks more clearly.
+
+5/4
+https://techcrunch.com/2024/12/11/microsofts-m12-invests-another-22-5m-into-nuebird-months-after-its-22m-seed-round/
+
+Microsoft’s M12 invests another $22.5M into NeuBird, months after its $22M seed round
+
+seed round スタートアップ起業の最初の本格投資ラウンド
+
+Microsoft invested a lot of money to hopeful startup company.
+いみはマイクロソフトが将来有望なスタートアップ企業に多額の投資をした
+
+Microsoft invested a significant amount of money in a promising startup company.
